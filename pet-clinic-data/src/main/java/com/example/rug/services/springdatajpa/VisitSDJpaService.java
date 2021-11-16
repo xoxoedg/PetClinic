@@ -1,13 +1,15 @@
 package com.example.rug.services.springdatajpa;
 
 import com.example.rug.model.Visit;
-import com.example.rug.services.VisitRepository;
+import com.example.rug.repositories.VisitRepository;
 import com.example.rug.services.VisitService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
 
+@Profile("springdatajpa")
 @Service
 public class VisitSDJpaService implements VisitService {
 
