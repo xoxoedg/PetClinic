@@ -2,11 +2,12 @@ package com.example.rug.services.map;
 
 import com.example.rug.model.Visit;
 import com.example.rug.services.VisitService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-
+@Profile({"default", "map"})
 @Service
 public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService {
 

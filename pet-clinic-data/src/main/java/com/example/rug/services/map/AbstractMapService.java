@@ -1,9 +1,11 @@
 package com.example.rug.services.map;
 
 import com.example.rug.model.BaseEntity;
+import org.springframework.context.annotation.Profile;
 
 import java.util.*;
 
+@Profile({"default", "map"})
 public abstract class AbstractMapService<T extends BaseEntity, ID extends  Long> {
 
     protected Map<Long, T> map = new HashMap<>();
