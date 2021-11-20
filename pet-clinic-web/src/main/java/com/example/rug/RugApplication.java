@@ -8,6 +8,7 @@ public class RugApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(RugApplication.class, args);
+
 	}
 
 }
