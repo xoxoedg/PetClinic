@@ -24,18 +24,19 @@ import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
 class OwnerSDJpaServiceTest {
+    private final String smith = "Smith";
 
-     @Mock
-     OwnerRepository ownerRepository;
+    @Mock
+    OwnerRepository ownerRepository;
 
-     @Mock
-     PetRepository petRepository;
+    @Mock
+    PetRepository petRepository;
 
     @Mock
     PetTypeRepository petTypeRepository;
+
     @InjectMocks
     OwnerSDJpaService ownerSDJpaService;
-    private final String smith = "Smith";
 
     Owner returnOwner;
 
