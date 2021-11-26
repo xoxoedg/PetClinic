@@ -1,6 +1,5 @@
 package com.example.rug.services.springdatajpa;
 
-import com.example.rug.model.Owner;
 import com.example.rug.model.Pet;
 import com.example.rug.repositories.PetRepository;
 import org.junit.jupiter.api.BeforeEach;
@@ -14,7 +13,8 @@ import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyLong;
 import static org.mockito.Mockito.when;
